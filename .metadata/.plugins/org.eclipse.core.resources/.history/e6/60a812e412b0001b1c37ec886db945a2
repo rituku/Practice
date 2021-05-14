@@ -1,0 +1,27 @@
+package Java8;
+
+import java.util.Arrays;
+
+@FunctionalInterface
+public interface FunctionOnAnArray{
+    int apply(int k, int ... intArray);
+}
+public class SumOfArray {
+	
+	public static void main(String[] args) {
+		int sumNo =0;
+		/*
+		 * AdditionArray sum = (n, arr) -> {
+		 * 
+		 * for (int i = 0; i < arr.length; i++) { sumNo += arr[i]; return sumNo; } };
+		 */
+		
+		 int sumNumber = 0;
+		// int[] arr = {4, 3};
+		AdditionArray f = Arrays.stream(arr)
+				    .filter(a -> a <= k)
+				    .sum();
+		
+	}
+
+}

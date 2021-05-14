@@ -1,0 +1,11 @@
+package Java8;
+
+
+interface AdditionArray{
+	abstract int add(int n, int ... arr);
+}
+public class SumOfArray {
+	
+	
+
+}

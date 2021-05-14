@@ -1,0 +1,18 @@
+package com;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Boot  {
+	   private static float temp() {
+	        float sum = 21;
+	       return(--(sum));
+	   }
+	 
+	   public static void main(String[] args) {
+	       Boot test = new Boot();
+	       System.out.println(test.temp());
+	   }
+
+
+	}

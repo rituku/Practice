@@ -1,0 +1,24 @@
+package com;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class IteratorExample  {
+	 
+	   public static void main(String args[]) {
+		   
+	       List<Integer> array = new ArrayList<Integer>();
+	       array.add(1);
+	       array.add(2);
+	       array.add(3);
+	       array.add(4);
+	 
+	       java.util.Iterator<Integer> iter = array.iterator();
+	 
+	       while (iter.hasNext()) {
+	           System.out.print(iter.next());
+	           array.add(5);
+	       }
+	   }
+
+	}

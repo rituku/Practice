@@ -1,0 +1,19 @@
+package Java8;
+
+
+interface AdditionArray{
+	abstract int add(int n, int ... arr);
+}
+public class SumOfArray {
+	
+	public static void main(String[] args) {
+		
+		AdditionArray sum = (n, arr) -> {
+			
+			for (int i = 0; i < args.length; i++) {
+				
+			}
+		}
+	}
+
+}

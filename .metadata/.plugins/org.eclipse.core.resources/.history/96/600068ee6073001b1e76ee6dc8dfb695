@@ -1,0 +1,14 @@
+package Emp;
+
+import java.util.HashMap;
+
+public class Emp {
+
+	public static void main(String[] args) {
+		HashMap<Integer, String> mp = new HashMap<Integer, String>();
+		
+		mp.put(1, "Ritu");
+		mp.put(2, "Rani");
+				mp.put(3, "Ritu");
+	}
+}

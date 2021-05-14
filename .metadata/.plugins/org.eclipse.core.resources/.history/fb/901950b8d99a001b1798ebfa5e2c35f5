@@ -1,0 +1,105 @@
+package array;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+/*class StudentClass{
+	int id;
+	String studentName;
+	String salary;
+	public StudentClass(int id, String studentName, String salary) {
+		super();
+		this.id = id;
+		this.studentName = studentName;
+		this.salary = salary;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getStudentName() {
+		return studentName;
+	}
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+	public String getSalary() {
+		return salary;
+	}
+	public void setSalary(String salary) {
+		this.salary = salary;
+	}
+	@Override
+	public String toString() {
+		return "StudentClass [id=" + id + ", studentName=" + studentName + ", salary=" + salary + "]";
+	}
+	
+}*/
+
+class SingletonClass {
+	
+	private static SingletonClass instance = new SingletonClass();
+	private SingletonClass() {}
+	
+	public static SingletonClass getInstance() {
+		return instance;
+	}
+}
+public class Practice {
+	/*
+	 * public static void main(String[] args) { Map<Integer, StudentClass>
+	 * studentClass = new HashMap<>(); studentClass.put(33, new StudentClass(2,
+	 * "Ritu", "yugdhd")); studentClass.put(23, new StudentClass(11, "Raj",
+	 * "ffdw")); studentClass.put(43, new StudentClass(6, "Somit", "kjdud"));
+	 * studentClass.put(13, new StudentClass(0, "Risa", "wyu"));
+	 * 
+	 * studentClass.entrySet().stream().sorted(Map.Entry.comparingByKey()).forEach(
+	 * System.out::println); System.out.println("==========");
+	 * studentClass.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator
+	 * .comparing(StudentClass::getId))).forEach(System.out::println);
+	 * System.out.println("======="); List<Map.Entry<Integer, StudentClass>>
+	 * entrySet = new ArrayList<Map.Entry<Integer,
+	 * StudentClass>>(studentClass.entrySet());
+	 * 
+	 * Collections.sort(entrySet, new Comparator<Map.Entry<Integer, StudentClass>>()
+	 * { public int compare(Map.Entry<Integer, StudentClass> e1, Map.Entry<Integer,
+	 * StudentClass> e2) { return
+	 * e1.getValue().getStudentName().compareTo(e2.getValue().getStudentName()); }
+	 * }); for (Map.Entry<Integer, StudentClass> mapIt : entrySet) {
+	 * System.out.println(mapIt); } //System.out.println(entrySet);
+	 * Collections.sort(entrySet, (o1, o2) ->
+	 * o1.getValue().studentName.compareTo(o2.getValue().studentName)); }
+	 */
+	
+	public static void main(String[] args) {
+		try {
+			SingletonClass singletonInstance = SingletonClass.getInstance();
+			
+		
+			ObjectOutputStream ob = new ObjectOutputStream(new FileOutputStream("input.txt"));
+			ob.writeObject(singletonInstance);
+			ob.close();
+			
+			ObjectInputStream ob1 = new ObjectInputStream(new FileInputStream("input.txt"));
+			SingletonClass instances = (SingletonClass)ob1.readObject();
+			
+			ob1.close();
+			System.out.println(singletonInstance.hashCode());
+			System.out.println(instances.hashCode());
+		}catch (Exception e) {
+		  e.printStackTrace();
+		}
+		
+	}
+}

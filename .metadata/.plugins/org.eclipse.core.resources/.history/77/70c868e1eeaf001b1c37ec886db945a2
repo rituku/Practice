@@ -1,0 +1,24 @@
+package com;
+
+interface Addition{
+	
+	abstract int add(int n);
+}
+
+public class Test implements Addition {
+
+	public static void main(String[] args) {
+		
+		int array[] = {2, 4, 2, 4};
+		int n = 3;
+		
+	//	Addition a = new Addition((a) ->  {return a+b});
+		
+		public int add(array, n) {
+			
+			
+			return a+b;
+		}
+		
+	}
+}

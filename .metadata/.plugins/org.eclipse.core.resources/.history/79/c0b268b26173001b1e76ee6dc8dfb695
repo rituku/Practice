@@ -1,0 +1,11 @@
+package Emp;
+
+public class Thread {
+	
+	synchronized void run() {
+		for (int i = 0; i < 6; i++) {
+		 System.out.println(i);
+		}
+	}
+
+}

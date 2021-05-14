@@ -1,0 +1,9 @@
+package Java8;
+
+
+interface Addition{
+	abstract int add(int n, int... arr);
+}
+public class SumOfArray {
+
+}

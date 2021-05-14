@@ -1,0 +1,16 @@
+package array;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class findkthsmallest {
+	public static int findSmallest(List<Integer> lts) {
+		
+		return 0;
+	}
+
+	public static void main(String[] args) {
+		List<Integer> lts = Arrays.asList(7, 4, 6, 3, 9, 1);
+		int out = findSmallest(lts);
+	}
+}

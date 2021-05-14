@@ -1,0 +1,13 @@
+package com;
+
+interface Addition{
+	
+	abstract int add(int n);
+}
+
+public class Test implements Addition {
+
+	public static void main(String[] args) {
+		
+	}
+}

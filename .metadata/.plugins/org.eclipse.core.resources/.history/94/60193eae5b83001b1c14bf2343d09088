@@ -1,0 +1,18 @@
+package Java8;
+
+import java.util.List;
+
+public class UserStream {
+public static void main(String[] args) {
+	
+}
+}
+
+ class Emp{
+
+	 private String name;
+	 private Integer age = 30;
+	 private List<String> phoneNumber;
+	 
+	
+}

@@ -1,0 +1,49 @@
+package com;
+
+interface Addition{
+	abstract int add(int a, int b);
+}
+
+
+public class Test {
+	
+	public static int add(int n, int arr[]) {
+		int sum = 0;
+		for(int i = 0; i< arr.length;i++) {
+			sum += arr[i];
+		}
+		return sum;
+	}
+
+	public static void main(String[] args) {
+		
+		int array[] = {2, 4,3, 1};
+		int n = 3;
+		
+		int sum = add(n, array);
+		System.out.println("sum=="+sum);
+		
+		int ar[] = {2, 4, 1};
+		int x = 3;
+		
+		int sum1 = add(x, array);
+		System.out.println("sum1=="+sum1);
+		
+		int arr[] = {2, 4, 9};
+		int y = 3;
+		
+		int sum2 = add(y, arr);
+		System.out.println("sum=="+sum2);
+		
+		System.out.println(" sum " + sum+ " sum1 "+ sum1+ " sum2 "+sum2);
+		
+	//	Addition a = new Addition((a) ->  {return a+b});
+		
+		/*
+		 * public int add(array, n) {
+		 * 
+		 * return a+b; }
+		 */
+		
+	}
+}

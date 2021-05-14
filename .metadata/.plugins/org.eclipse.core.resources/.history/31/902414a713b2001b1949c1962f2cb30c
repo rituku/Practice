@@ -1,0 +1,63 @@
+package com;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+class Employee{
+	int id;
+	String name;
+	
+	
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	
+	public Employee(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+
+	public int hashcode() {
+		return this.id - getId();
+	}
+	public boolean equals() {
+		Employee e = null;
+		if(e.id == this.id) {
+			return false;
+		}
+	
+		return true;
+	}
+	
+}
+public class TestSet {
+
+	public static void main(String[] args) {
+		Set<Employee> s = new HashSet();
+		s.add(new Employee(2, "Ritu"));
+		s.add(new Employee(2, "Ritu"));
+		
+		Iterator it = s.iterator();
+		while(it.hasNext()) {
+			System.out.println(it.next());
+		}
+		
+		
+	}
+}

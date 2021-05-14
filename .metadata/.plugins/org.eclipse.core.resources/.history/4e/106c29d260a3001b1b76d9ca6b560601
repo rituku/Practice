@@ -1,0 +1,24 @@
+package Thread;
+
+interface Test4{
+	
+}
+class Test1{
+	
+	
+}
+class Test3{
+	
+	
+}
+class Test2 extends Test1 implements Test4 {
+	
+	
+}
+public class Test {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

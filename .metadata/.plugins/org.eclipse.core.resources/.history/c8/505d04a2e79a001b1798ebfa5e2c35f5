@@ -1,0 +1,12 @@
+package array;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Practice {
+	public static void main(String[] args) {
+		ArrayList<Integer> array = new ArrayList<Integer>(Arrays.asList(3, 2, 4, 2, 3, 2, 6, 7, 2, 1, 6));
+		
+	}
+	
+}

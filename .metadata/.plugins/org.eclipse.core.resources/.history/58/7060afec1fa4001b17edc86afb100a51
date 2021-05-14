@@ -1,0 +1,13 @@
+package com;
+
+class Node{
+	int data;
+	Node node = null;
+	
+}
+
+public class BinarySearchTree {
+public static void main(String[] args) {
+	
+}
+}

@@ -1,0 +1,21 @@
+package Java8;
+
+//@FunctionalInterface
+interface Addition {
+	abstract int add(int a, int b);
+}
+class Demo implements Addition{
+
+	@Override
+	public int add(int a, int b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}
+public class AddNumber {
+	public static void main(String[] args) {
+		
+	}
+
+}
